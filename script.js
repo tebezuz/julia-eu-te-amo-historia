@@ -29,3 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(period);
     });
 });
+// Seleciona o ícone e o menu
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    const menu = document.querySelector('nav ul');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+});
